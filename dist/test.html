@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>画只可达鸭</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+      <button id="buttonPause">暂停</button>
+      <button id="buttonPlay">播放</button>
+      <button id="buttonSlow">慢速</button>
+      <button id="buttonFast">快速</button>
+    </div>
+    <style>*{box-sizing: border-box;}
+      *::before,*::after {box-sizing: border-box}
+      #buttons {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      #buttons > button{
+        margin-bottom: 10px;
+        padding: 4px 8px;
+      }
+
+      #demo2{
+        display: none;
+      }
+      #demo{
+        position: fixed;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow-y: auto;
+      }
+      #demo::-webkit-scrollbar{
+        display: none;
+      }
+      #outPut {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+      }</style>
+    <div id="outPut">
+      <div class="skin">
+        <div class="middle"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose">
+          <div class="up"></div>
+          <div class="upleft1"></div>
+          <div class="upleft1Under"></div>
+          <div class="upleft2"></div>
+          <div class="upleft3"></div>
+          <div class="upleft4"></div>
+          <div class="upleft5"></div>
+          <div class="upright1"></div>
+          <div class="upright1Under"></div>
+          <div class="upright2"></div>
+          <div class="upright3"></div>
+          <div class="upright4"></div>
+          <div class="upright5"></div>
+          <div class="downUnder1"></div>
+          <div class="downUnder2"></div>
+          <div class="downUnder3"></div>
+          <div class="downbottom"></div>
+          <div class="hole1"></div>
+          <div class="hole2"></div>
+        </div>
+        <div class="hair1"></div>
+        <div class="hair2"></div>
+        <div class="hair3"></div>
+        <div class="test"></div>
+      </div>
+    </div>
+    <script src="/test.e98b79dd.js"></script>
+  </body>
+</html>
