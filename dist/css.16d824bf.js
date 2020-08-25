@@ -127,63 +127,7 @@ exports.default = void 0;
 var string = "\n\u7ED9\u5927\u5BB6\u753B\u4E00\u4E2A\u53EF\u8FBE\u9E2D\n * {\n    box-sizing: border-box;\nmargin: 0;\npadding: 0;\n}\n*::before,\n*::after {\n    box-sizing: border-box;\n}\nbody {\n    min-height: 100vh;\n    background: yellow;\n}\n.skin {\n    position: relative;\n}\n.middle {\n    border: 2px solid #000;\n    width: 600px;\n    height: 450px;\n    position: relative;\n    left: 50%;\n    top: 60px;\n    margin-left: -300px;\n    border-radius: 100% 100% 100% 100%;\n}\n.eye {\n    border: 2px solid #000;\n    width: 200px;\n    height: 110px;\n    position: absolute;\n    left: 50%;\n    top: 220px;\n    margin-left: -100px;\n    background: #fff;\n    border-radius: 200px/110px;\n}\n.eye.left {\n    transform: translateX(150px);\n}\n.eye.right {\n    transform: translateX(-150px);\n}\n.eye::before {\n    content: \"\";\n    display: block;\n    border: 1px solid #000;\n    width: 10px;\n    height: 10px;\n    background: black;\n    border-radius: 50%;\n    position: relative;\n    left: 60px;\n    top: 45px;\n    margin-left: 33px;\n}\n\n.nose {\n    border: #000 1px solid;\n    width: 100px;\n    height: 100px;\n    position: absolute;\n    left: 50%;\n    top: 420px;\n    margin-left: -50px;\n}\n\n.nose .up {\n    border: 2px solid #000;\n    width: 150px;\n    height: 300px;\n    position: relative;\n    position: absolute;\n    top: -79px;\n    left: 50%;\n    margin-left: -75px;\n    border-radius: 70% 70%;\n    border-right-color: transparent;\n    border-left-color: transparent;\n    border-bottom-color: transparent;\n    background-color: #e0d9ab;\n    z-index: 2;\n}\n.nose .upleft1 {\n    border: 2px solid;\n    border-color: yellow transparent black transparent;\n    width: 44px;\n    height: 30px;\n    position: relative;\n    position: absolute;\n    top: -72px;\n    left: 50%;\n    margin-left: -78px;\n    border-radius: 0 0 70% 0;\n    background-color: yellow;\n}\n.nose .upleft1Under {\n    width: 40px;\n    height: 30px;\n    position: relative;\n    position: absolute;\n    top: -72px;\n    left: 50%;\n    margin-left: -76px;\n    background-color: #e0d9ab;\n    z-index: -1;\n}\n.nose .upleft2 {\n    border: 2px solid #000;\n    width: 80px;\n    height: 40px;\n    position: relative;\n    position: absolute;\n    top: -44px;\n    left: 50%;\n    margin-left: -150px;\n    border-radius: 100% 0 0 0;\n    border-right-color: transparent;\n    border-top-color: transparent;\n    border-bottom-color: transparent;\n    background-color: #e0d9ab;\n}\n.nose .upleft3 {\n    border: 2px solid;\n    width: 40px;\n    height: 24px;\n    position: relative;\n    position: absolute;\n    top: -5px;\n    left: 50%;\n    margin-left: -150px;\n    border-radius: 0 0 0 100%;\n    border-right-color: transparent;\n    border-top-color: transparent;\n    background-color: #e0d9ab;\n}\n.nose .upleft4 {\n    border: 2px solid #000;\n    transform: rotate(5deg);\n    width: 30px;\n    height: 60px;\n    position: relative;\n    position: absolute;\n    top: -4px;\n    left: 50%;\n    margin-left: -140px;\n    border-radius: 0 0 100% 50%;\n    border-left-color: transparent;\n    border-top-color: transparent;\n    border-bottom-color: transparent;\n    z-index: 1;\n}\n\n.nose .upleft5 {\n    border: 2px solid #000;\n    transform: rotate(-1deg);\n    width: 100px;\n    height: 130px;\n    position: absolute;\n    top: 15px;\n    left: 50%;\n    margin-left: -147px;\n    border-radius: 100% 15% 0 0;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    border-bottom-color: transparent;\n    background-color: #e0d9ab;\n}\n\n.nose .upright1 {\n    border: 2px solid;\n    border-color: yellow transparent black transparent;\n    width: 44px;\n    height: 30px;\n    position: relative;\n    position: absolute;\n    top: -72px;\n    left: 50%;\n    margin-left: 34px; /*  left -78px*/\n    border-radius: 0 0 0 70%;\n    background-color: yellow;\n    z-index: 1;\n}\n.nose .upright1Under {\n    width: 40px;\n    height: 30px;\n    position: relative;\n    position: absolute;\n    top: -8px;\n    left: 50%;\n    margin-left: 36px;\n    background-color: #e0d9ab;\n    z-index: -1;\n}\n.nose .upright2 {\n    border: 2px solid #000;\n    width: 80px;\n    height: 40px;\n    position: relative;\n    position: absolute;\n    top: -44px;\n    left: 50%;\n    margin-left: 70px; /*  left -150px*/\n    border-radius: 0 100% 0 0;\n    border-left-color: transparent;\n    border-top-color: transparent;\n    border-bottom-color: transparent;\n    background-color: #e0d9ab;\n}\n.nose .upright3 {\n    border: 2px solid;\n    width: 40px;\n    height: 24px;\n    position: relative;\n    position: absolute;\n    top: -5px;\n    left: 50%;\n    margin-left: 110px; /*  left -150px*/\n    border-radius: 0 0 100% 0;\n    border-left-color: transparent;\n    border-top-color: transparent;\n    background-color: #e0d9ab;\n}\n\n.nose .upright4 {\n    border: 2px solid #000;\n    transform: rotate(-5deg);\n    width: 30px;\n    height: 60px;\n    position: relative;\n    position: absolute;\n    top: -4px;\n    left: 50%;\n    margin-left: 110px; /*  left -140px*/\n    border-radius: 0 0 50% 100%;\n    border-right-color: transparent;\n    border-top-color: transparent;\n    border-bottom-color: transparent;\n    z-index: 1;\n}\n\n.nose .upright5 {\n    border: 2px solid #000;\n    transform: rotate(1deg);\n    width: 100px;\n    height: 130px;\n    position: absolute;\n    top: 15px;\n    left: 50%;\n    margin-left: 47px; /*  left -147px*/\n    border-radius: 15% 100% 0 0;\n    border-top-color: transparent;\n    border-left-color: transparent;\n    border-bottom-color: transparent;\n    background-color: #e0d9ab;\n}\n\n.nose .downbottom {\n    border: 2px solid #000;\n    width: 292px;\n    height: 120px;\n    position: absolute;\n    top: 137px;\n    left: 50%;\n    margin-left: -146px;\n    border-radius: 50%/ 0 0 100% 100%;\n    border-top-color: #e0d9ab;\n    background-color: #e0d9ab;\n}\n.nose .downUnder1 {\n    width: 140px;\n    height: 200px;\n    position: absolute;\n    top: -42px;\n    left: 50%;\n    margin-left: -70px;\n    background-color: #e0d9ab;\n}\n.nose .downUnder2 {\n    transform: rotate(-5deg);\n    width: 50px;\n    height: 60px;\n    position: relative;\n    position: absolute;\n    top: -16px;\n    left: 50%;\n    margin-left: 60px;\n    background-color: #e0d9ab;\n}\n.nose .downUnder3 {\n    transform: rotate(5deg);\n    width: 50px;\n    height: 60px;\n    position: relative;\n    position: absolute;\n    top: -6px;\n    left: 50%;\n    margin-left: -110px;\n    background-color: #e0d9ab;\n}\n\n.hole1 {\n    transform: rotate(-30deg);\n    margin-left: -30px;\n    border: 1px solid red;\n    width: 6px;\n    height: 18px;\n    position: relative;\n    position: absolute;\n    top: -40px;\n    left: 50%;\n    border-radius: 100% 100% 70% 70%;\n    background-color: #000;\n    z-index: 2;\n}\n.hole2 {\n    transform: rotate(30deg);\n    margin-left: 24px;\n    border: 1px solid red;\n    width: 6px;\n    height: 18px;\n    position: relative;\n    position: absolute;\n    top: -40px;\n    left: 50%;\n    border-radius: 100% 100% 70% 70%;\n    background-color: #000;\n    z-index: 2;\n}\n.hair1 {\n    margin: 30px;\n    height: 0px;\n    width: 0px;\n    transform-origin: -20px 60px;\n    transform: rotate(-30deg);\n    border-top: solid 60px #000;\n    border-left: solid 30px rgba(0, 0, 0, 0);\n    position: relative;\n    left: 50%;\n    top: -454px;\n    margin-left: -26px;\n    border-radius: 100% 0 10% 10%;\n}\n.hair2 {\n    border: solid 1px;\n    transform-origin: -20px 60px;\n    transform: rotate(10deg);\n    border-radius: 0 0 0 100%;\n    height: 60px;\n    width: 20px;\n    position: relative;\n    left: 50%;\n    margin-left: -20px;\n    top: -580px;\n    border-color: transparent transparent transparent black;\n    background-color: #000;\n}\n.hair3 {\n    border: solid 1px;\n    transform-origin: -20px 60px;\n    transform: rotate(60deg);\n    border-radius: 0 0 0 100%;\n    height: 60px;\n    width: 20px;\n    position: relative;\n    left: 50%;\n    margin-left: -4px;\n    top: -663px;\n    border-color: transparent transparent transparent black;\n    background-color: #000;\n}\n";
 var _default = string;
 exports.default = _default;
-},{}],"test.js":[function(require,module,exports) {
-"use strict";
-
-var _css = _interopRequireDefault(require("./css.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var n = 1;
-console.log(n);
-demo.innerText = _css.default.substr(0, n);
-demo2.innerHTML = _css.default.substr(0, n);
-
-var x = function x() {
-  n += 1;
-
-  if (n > _css.default.length) {
-    window.clearInterval(id);
-    return;
-  }
-
-  demo.innerText = _css.default.substr(0, n);
-  demo2.innerHTML = _css.default.substr(0, n);
-  demo.scrollTop = demo.scrollHeight;
-};
-
-var time = 50;
-
-var play = function play() {
-  return setInterval(x, time);
-};
-
-var id = play();
-
-var pause = function pause() {
-  window.clearInterval(id);
-};
-
-buttonPause.onclick = function () {
-  pause();
-};
-
-buttonPlay.onclick = function () {
-  id = play();
-};
-
-buttonSlow.onclick = function () {
-  pause();
-  time = 200;
-  id = play();
-};
-
-buttonFast.onclick = function () {
-  pause();
-  time = 0;
-  id = play();
-};
-},{"./css.js":"css.js"}],"C:/Users/Jun/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"C:/Users/Jun/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -386,5 +330,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/Jun/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js","test.js"], null)
-//# sourceMappingURL=/test.e98b79dd.js.map
+},{}]},{},["C:/Users/Jun/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js","css.js"], null)
+//# sourceMappingURL=/css.16d824bf.js.map

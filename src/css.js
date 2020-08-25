@@ -371,5 +371,5 @@ body {
     border-color: transparent transparent transparent black;
     background-color: #000;
 }
-`
-export default  string;
+`;
+export default string;
